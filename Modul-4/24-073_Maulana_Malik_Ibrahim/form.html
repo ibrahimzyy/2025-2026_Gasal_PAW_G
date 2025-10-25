@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validasi Surname</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;  /* center horizontal */
+      align-items: center;      /* center vertical */
+      height: 100vh;            /* full screen height */
+      margin: 0;
+    }
+    form {
+      border: 1px solid #000;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 90%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="processData.php" method="POST">
+    <h3>Input Surname</h3>
+    <label for="surname">Surname:</label><br>
+    <input type="text" id="surname" name="surname" required><br>
+    <input type="submit" value="Kirim">
+  </form>
+
+</body>
+</html>
